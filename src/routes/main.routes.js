@@ -22,7 +22,7 @@ router.get('/login', (req, res) => {
 });
 
 router.get('/callback', async (req, res) => {
-    let credentials = (spotifyApi.authorizationCodeGrant(req.query.code))?.body;
+    let credentials = (await spotifyApi.authorizationCodeGrant(req.query.code))?.body;
     res.redirect(`${process.env.CLIENT_REDIRECT_URL}?access_token=${credentials.access_token}&refresh_token=${credentials.refresh_token}&expires_in=${credentials.expires_in}&scope=${credentials.scope}&token_type=${credentials.token_type}`);
 });
 
