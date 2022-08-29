@@ -1,0 +1,33 @@
+{
+  "name": "spotify-oauth2-server",
+  "version": "0.0.1",
+  "description": "Simple authentication system to get Spotify OAuth2 tokens",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ClunkyTeam/Spotify-OAuth2-Server.git"
+  },
+  "keywords": [
+    "Spotify",
+    "Express"
+  ],
+  "author": "ClunkyTeam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ClunkyTeam/Spotify-OAuth2-Server/issues"
+  },
+  "homepage": "https://github.com/ClunkyTeam/Spotify-OAuth2-Server-Server#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "got": "^12.0.0",
+    "morgan": "^1.10.0",
+    "spotify-web-api-node": "^5.0.2"
+  }
+}
